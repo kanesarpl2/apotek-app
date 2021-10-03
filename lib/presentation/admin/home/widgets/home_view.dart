@@ -1,3 +1,4 @@
+import 'package:apotek_bloc/presentation/admin/home/widgets/body.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatefulWidget {
@@ -10,19 +11,9 @@ class HomeView extends StatefulWidget {
 class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: SafeArea(
-        child: Container(
-          padding: const EdgeInsets.all(8),
-          child: Column(
-            children: [
-              MaterialButton(
-                child: const Text("Logout"),
-                onPressed: () {},
-              ),
-            ],
-          ),
-        ),
+        child: Body(),
       ),
     );
   }
