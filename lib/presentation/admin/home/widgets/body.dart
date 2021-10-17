@@ -9,6 +9,10 @@ class Body extends StatelessWidget {
       padding: const EdgeInsets.all(8),
       child: Column(
         children: [
+          Text(
+            'Welcome to the Flutter Web App',
+            style: Theme.of(context).textTheme.headline6,
+          ),
           MaterialButton(
             child: const Text("Logout"),
             onPressed: () {},
